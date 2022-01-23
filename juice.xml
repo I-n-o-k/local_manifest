@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+          
+        <remote name="bengal"
+                fetch="https://github.com/MiBengal-Development"
+                revision="LA.UM.9.15.r1-05400-KAMORTA.0" />
+
+        <remote name="I-n-o-k"
+                fetch="https://github.com/I-n-o-k" />
+
+        <remote name="vendor"
+                fetch="https://gitlab.com/I-n-o-k" />
+
+        <remote name="proton"
+                fetch="https://github.com/kdrag0n" />
+
+        <!-- Sync trees -->
+        <project path="device/xiaomi/juice" name="device_xiaomi_juice" remote="I-n-o-k" revision="12" clone-depth="1" />
+        <project path="vendor/xiaomi/juice" name="vendor-lime" remote="vendor" revision="11" clone-depth="1" />
+        <project path="kernel/xiaomi/juice" name="android_kernel_xiaomi_bengal" remote="I-n-o-k" revision="11.0" clone-depth="1" />
+
+        <!-- Sync Hals -->
+        <remove-project name="android_vendor_nxp_opensource_packages_apps_Nfc"/>
+        <project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" name="android_vendor_nxp_opensource_packages_apps_Nfc" remote="I-n-o-k" revision="lineage-18.1" clone-depth="1"/>
+        <project path="hardware/qcom-caf/bengal" name="hardware_qcom-caf_bengal" remote="bengal" clone-depth="1" />
+        <project path="hardware/qcom-caf/bengal/audio" name="hardware_qcom-caf_sm8250_audio" remote="bengal" clone-depth="1" />
+        <project path="hardware/qcom-caf/bengal/display" name="hardware_qcom-caf_sm8250_display" remote="bengal"  clone-depth="1" />
+        <project path="hardware/qcom-caf/bengal/media" name="hardware_qcom-caf_sm8250_media" remote="bengal" clone-depth="1" />
+        <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="proton" revision="master" clone-depth="1"/>
+</manifest>
