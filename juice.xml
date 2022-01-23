@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+          
+        <remote name="I-n-o-k"
+                fetch="https://github.com/I-n-o-k" />
+
+        <remote name="vendor"
+                fetch="https://gitlab.com/I-n-o-k" />
+
+        <!-- Sync trees -->
+        <project path="device/xiaomi/juice" name="device_xiaomi_juice" remote="I-n-o-k" revision="nusantara" clone-depth="1" />
+        <project path="vendor/xiaomi/juice" name="vendor-lime" remote="gitlab" revision="11" clone-depth="1" />
+        <project path="kernel/xiaomi/juice" name="android_kernel_xiaomi_bengal" remote="I-n-o-k" revision="11.0" clone-depth="1" />
+
+        <!-- Sync Hals -->
+        <remove-project name="android_hardware_qcom_audio"/>
+        <remove-project name="android_hardware_qcom_display"/>
+        <remove-project name="android_hardware_qcom_media"/>
+        <project path="hardware/qcom-caf/sm8250/audio" name="android_hardware_qcom_audio" remote="I-n-o-k" revision="9.15.r1-02800" clone-depth="1" />
+        <project path="hardware/qcom-caf/sm8250/display" name="android_hardware_qcom_display" remote="I-n-o-k" revision="9.15.r1-02800" clone-depth="1" />
+        <project path="hardware/qcom-caf/sm8250/media" name="android_hardware_qcom_media" remote="I-n-o-k" revision="9.15.r1-02800" clone-depth="1" />
+</manifest>
