@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+          
+        <remote name="github"
+                fetch="https://github.com" />
+
+        <remote name="gitlab"
+                fetch="https://gitlab.com" />
+
+        <!-- Sync trees -->
+        <project path="device/xiaomi/juice" name="I-n-o-k/android_device_xiaomi_juice" remote="github" revision="nusantara" clone-depth="1" />
+        <project path="vendor/xiaomi/juice" name="I-n-o-k/vendor-lime" remote="gitlab" revision="11" clone-depth="1" />
+        <project path="kernel/xiaomi/juice" name="I-n-o-k/android_kernel_xiaomi_juice" remote="github" revision="11.0" clone-depth="1" />
+</manifest>
