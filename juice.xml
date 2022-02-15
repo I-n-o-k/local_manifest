@@ -15,8 +15,8 @@
                 fetch="https://github.com/kdrag0n" />
 
         <remote name="parts"
-                fetch="https://github.com/Juice-ID" />
-                revision="ink.staging"
+                fetch="https://github.com/Juice-ID"
+                revision="ink.staging" />
 
         <!-- Sync trees -->
         <project path="device/xiaomi/juice" name="device_xiaomi_juice" remote="I-n-o-k" revision="12" clone-depth="1" />
