@@ -1,8 +1,3 @@
-          export PROJECTFOLDER="/crave-devspaces/Rising14"
-          export PROJECTID="86"
-          export REPO_INIT="repo init -u https://github.com/RisingTechOSS/android.git -b fourteen --git-lfs --depth=1"
-
-
 #!/bin/bash
 
 set -e
