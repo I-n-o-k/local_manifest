@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="I-n-o-k"
+           fetch="https://github.com/I-n-o-k" />
+
+  <remote name="sm6150"
+           fetch="https://github.com/xiaomi-sm6150" />
+
+<!--Common tree-->
+  <project name="device_xiaomi_sm6150-common" path="device/xiaomi/sm6150-common" revision="14.0" remote="I-n-o-k"/>
+<!--Common tree-->
+  <project name="device_xiaomi_courbet" path="device/xiaomi/courbet" revision="14.0" remote="I-n-o-k"/>
+<!--Kernel tree-->
+  <project name="android_kernel_xiaomi_sm6150" path="kernel/xiaomi/sm6150" revision="lineage-22.0" remote="sm6150"/>
+<!--Vendor tree-->
+  <project name="proprietary_vendor_xiaomi_sm6150-common" path="vendor/xiaomi/sm6150-common" revision="lineage-22.0" remote="sm6150"/>
+  <project name="proprietary_vendor_xiaomi_courbet" path="vendor/xiaomi/courbet" revision="lineage-21" remote="sm6150"/>
+
+</manifest>
