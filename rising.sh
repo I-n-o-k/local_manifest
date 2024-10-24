@@ -20,6 +20,9 @@ export BUILD_HOSTNAME=crave
 echo "======= Export Done ======"
 
 # Set up build environment
+rm -rf kernel/xiaomi/sm6150
+git clone https://github.com/crdroidandroid/android_kernel_xiaomi_courbet kernel/xiaomi/sm6150
+cp kernel/xiaomi/sm6150/arch/arm64/configs/courbet_defconfig kernel/xiaomi/sm6150/arch/arm64/configs/vendor/courbet.config
 source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
