@@ -3,7 +3,7 @@
 set -e
 #Credit to Meghthedev for the initial script 
 
-export PROJECTFOLDER="Rising14"
+export PROJECTFOLDER="Rising"
 export PROJECTID="86"
 export REPO_INIT="repo init -u https://github.com/RisingTechOSS/android.git -b fourteen --git-lfs --depth=1"
 export BUILD_DIFFERENT_ROM="$REPO_INIT" # Change this if you'd like to build something else
