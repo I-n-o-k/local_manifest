@@ -15,7 +15,7 @@
 <!--Common tree-->
   <project name="device_xiaomi_courbet" path="device/xiaomi/courbet" revision="14.0" remote="I-n-o-k"/>
 <!--Kernel tree-->
-  <project name="android_kernel_xiaomi_sm6150" path="kernel/xiaomi/sm6150" revision="lineage-21" remote="sm6150"/>
+  <project name="kernel_xiaomi_courbet" path="kernel/xiaomi/sm6150" revision="l4.0" remote="I-n-o-k"/>
 <!--Vendor tree-->
   <project name="proprietary_vendor_xiaomi_sm6150-common" path="vendor/xiaomi/sm6150-common" revision="lineage-21" remote="sm6150"/>
   <project name="proprietary_vendor_xiaomi_courbet" path="vendor/xiaomi/courbet" revision="lineage-21" remote="sm6150"/>
